@@ -1,0 +1,62 @@
+.selectDropdown {
+  width: 250px;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  border-radius: 5px;
+  z-index: 100;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+.selectDrop .openSelect {
+  display: block;
+  padding: 10px 0px;
+}
+.selectDrop .openSelect .arrow {
+  position: absolute;
+  right: 10px;
+  opacity: 0.6;
+}
+
+.searchField input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #ca8a04;
+  outline: none;
+  padding: 0px 15px;
+}
+.selectDropdown .searchCategories {
+  width: 100%;
+  margin: 15px 0px;
+  padding: 10px 0px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.selectDropdown .searchCategories::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.selectDropdown .searchCategories::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+
+.selectDropdown .searchCategories li {
+  list-style: none;
+  font-size: 16px;
+  width: 100%;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.selectDropdown .searchCategories li:hover {
+  background: #ca8a04;
+  color: #fff;
+}
+.selectDropdown .searchCategories li.active {
+  background: #f1f1f1;
+  color: #000 !important;
+}
