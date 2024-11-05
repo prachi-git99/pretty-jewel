@@ -3,7 +3,6 @@ import "../selectDropdown/select.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { ClickAwayListener } from "@mui/base/ClickAwayListener";
-// import { ClickAwayListener } from "@mui/base";
 
 const Select = ({ data, placeholder }) => {
   const [isCategorySelect, setisCategorySelect] = useState(false);

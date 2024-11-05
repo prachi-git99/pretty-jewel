@@ -1,0 +1,31 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+.homeSliderMain {
+  border-radius: 15px;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.homeSlider {
+  padding: 5px 0px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 47%;
+  width: 40px;
+  height: 40px !important;
+  border-radius: 50% !important;
+  z-index: 1000 !important;
+  background: rgba(249, 247, 247, 0.295) !important;
+}
+
+.slick-arrow.slick-next {
+  right: 3% !important;
+}
+.slick-arrow.slick-prev {
+  left: 3% !important;
+}

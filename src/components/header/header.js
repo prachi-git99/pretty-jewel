@@ -5,12 +5,27 @@ import Logo from "../../assets/images/logo_icon.png";
 import SearchIcon from "@mui/icons-material/Search";
 import Select from "../common_components/selectDropdown/select";
 import axios from "axios";
+
+import { ClickAwayListener } from "@mui/base/ClickAwayListener";
+
+//header icons
 import IconCompare from "../../assets/images/compare.png";
 import IconWishlist from "../../assets/images/wishlist.png";
 import IconCart from "../../assets/images/shopping-cart.png";
 import IconUser from "../../assets/images/user.png";
+// icons
+import Button from "@mui/material/Button";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
+
+import Nav from "../header/nav/nav";
 
 const Header = () => {
+  const [isOpenDropdown, setIsOpenDropdown] = useState(false);
+
   const [categories, setCategories] = useState([
     // "All Jewellery",
     "Earrings",
@@ -77,42 +92,100 @@ const Header = () => {
                 </div>
                 {/* HEADER LOCATION SELECT END */}
                 {/* HEADER ICONS  START */}
+                <ClickAwayListener onClickAway={() => setIsOpenDropdown(false)}>
+                  <ul className="list list-inline mb-0 headerTabs">
+                    <li className="list-inline-item">
+                      <span>
+                        <img
+                          src={IconCompare}
+                          className="headerIcon"
+                          alt="compareIcon"
+                        />
+                        <span className="badge bg-success rounded-circle">
+                          13
+                        </span>
+                        Compare
+                      </span>
+                    </li>
+                    <li className="list-inline-item">
+                      <span>
+                        <img
+                          src={IconWishlist}
+                          className="headerIcon"
+                          alt="wishlist icon"
+                        />
+                        <span className="badge bg-success rounded-circle">
+                          3
+                        </span>
+                        Wishlist
+                      </span>
+                    </li>
+                    <li className="list-inline-item">
+                      <span>
+                        <img
+                          src={IconCart}
+                          className="headerIcon"
+                          alt="cart icon"
+                        />
+                        <span className="badge bg-success rounded-circle">
+                          3
+                        </span>
+                        Cart
+                      </span>
+                    </li>
+                    <li className="list-inline-item">
+                      <span onClick={() => setIsOpenDropdown(!isOpenDropdown)}>
+                        <img
+                          src={IconUser}
+                          className="headerIcon"
+                          alt="user icon"
+                        />
+                        User
+                      </span>
+                      {isOpenDropdown ? (
+                        <ul className="dropdownMenu">
+                          <li>
+                            <Button className="align-items-center">
+                              <AccountCircleOutlinedIcon />
+                              <span>My Account</span>
+                            </Button>
+                          </li>
+                          <li>
+                            <Button>
+                              <LocationOnOutlinedIcon />
+                              <span>Order Tracking</span>
+                            </Button>
+                          </li>
 
-                <ul className="list list-inline mb-0 headerTabs">
-                  {/* <li className="list-inline-item">
-                    <span>
-                      <img src={IconCompare} className="headerIcon" />
-                      <span className="badge bg-success rounded-circle">3</span>
-                      Compare
-                    </span>
-                  </li> */}
-                  <li className="list-inline-item">
-                    <span>
-                      <img src={IconWishlist} className="headerIcon" />
-                      <span className="badge bg-success rounded-circle">3</span>
-                      Wishlist
-                    </span>
-                  </li>
-                  <li className="list-inline-item">
-                    <span>
-                      <img src={IconCart} className="headerIcon" />
-                      <span className="badge bg-success rounded-circle">3</span>
-                      Cart
-                    </span>
-                  </li>
-                  <li className="list-inline-item">
-                    <span>
-                      <img src={IconUser} className="headerIcon" />
-                      User
-                    </span>
-                  </li>
-                </ul>
-
+                          <li>
+                            <Button>
+                              <FavoriteBorderIcon />
+                              <span>My Wishlist</span>
+                            </Button>
+                          </li>
+                          <li>
+                            <Button>
+                              <SettingsOutlinedIcon />
+                              <span>Settings</span>
+                            </Button>
+                          </li>
+                          <li>
+                            <Button>
+                              <ExitToAppOutlinedIcon />
+                              <span>Signout</span>
+                            </Button>
+                          </li>
+                        </ul>
+                      ) : null}
+                    </li>
+                  </ul>
+                </ClickAwayListener>
                 {/* HEADER ICONS  END */}
               </div>
             </div>
           </div>
         </div>
+        <Nav />
       </header>
     </>
   );

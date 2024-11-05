@@ -15,3 +15,11 @@ body {
 .cursor {
   cursor: pointer;
 }
+
+.bg-theme,
+.bg-success {
+  background: #ca8a04 !important;
+}
+.text-theme {
+  color: #ca8a04;
+}

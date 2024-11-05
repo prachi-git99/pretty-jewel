@@ -95,16 +95,55 @@ header .headerTabs li span img {
 }
 
 .headerIcon {
-  height: 25px;
-  width: 25px;
+  height: 22px;
+  width: 22px;
 }
 header .headerTabs li span .badge {
-  width: 20px;
-  font-size: 12px;
-  height: 20px;
+  width: 18px;
+  font-size: 10px;
+  height: 18px;
   color: #fff;
   font-weight: 500;
+
   position: absolute;
-  top: -10px;
-  left: 15px;
+  top: -5px;
+  left: 12px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  width: 160px;
+  height: auto;
+  margin-top: 10px;
+  padding: 5px 5px !important;
+  background: #fff;
+  z-index: 100;
+  box-shadow: 0 3px 6px rgb(0 0 0/ 20%);
+}
+.dropdownMenu li {
+  width: 100% !important;
+  list-style: none;
+  margin: 0px !important;
+}
+.dropdownMenu li Button {
+  width: 100% !important;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+  justify-content: flex-start;
+}
+.dropdownMenu li Button:hover {
+  background: #f2f2f2;
+}
+.dropdownMenu li Button svg {
+  opacity: 0.7;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.dropdownMenu li Button span {
+  margin-bottom: 0px !important;
+  font-size: 14px !important;
 }
