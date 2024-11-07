@@ -57,7 +57,7 @@
   position: absolute;
   top: 150%;
   left: 0;
-  width: 98%;
+  width: 99%;
   height: auto;
   padding: 10px 0px;
   background: #fff;
@@ -67,7 +67,7 @@
   margin: 0px 10px !important;
   visibility: hidden;
   transition: all 0.1s ease-in-out;
-  border-radius: 10px 0px 10px 0px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 /* Show mega menu on hover */

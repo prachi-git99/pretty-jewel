@@ -28,7 +28,10 @@
 .slick-arrow {
   position: absolute;
   top: 47%;
-  z-index: 1000 !important;
+  border-radius: 30px;
+  width: 40px;
+  height: 38px;
+  z-index: 90 !important;
 }
 
 .slick-arrow.slick-next {
@@ -39,13 +42,15 @@
 }
 
 .slick-prev:before {
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .slick-next:before {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .slick-arrow:hover::before {

@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Quicksand", cursive;
 }
 .container-fluid {
   padding: 0px 35px;
@@ -22,4 +21,10 @@ body {
 }
 .text-theme {
   color: #ca8a04;
+}
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
