@@ -22,9 +22,14 @@
   justify-content: center;
   flex-direction: column;
 }
+.cat_slider_main .cat_item:hover .cat_info img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+}
 .cat_slider_main .cat_item .cat_info h5 {
   font-weight: 500;
   font-size: 16px;
+  margin-top: 10px;
 }
 .cat_slider_main .slick-arrow {
   zoom: 80%;

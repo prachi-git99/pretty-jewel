@@ -64,129 +64,135 @@ const Header = () => {
 
   return (
     <>
-      <header>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-2 ">
-              <img src={Logo} alt="Pretty jewel logo" />
-            </div>
+      <div className="headerWrapper">
+        <header>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-sm-2 ">
+                <img src={Logo} alt="Pretty jewel logo" />
+              </div>
 
-            {/* HEADER SEARCH START */}
-            <div className="col-sm-5 search-section">
-              <div className="header-search d-flex align-items-center">
-                <Select data={categories} placeholder="All Jewellery" />
+              {/* HEADER SEARCH START */}
+              <div className="col-sm-5 search-section">
+                <div className="header-search d-flex align-items-center">
+                  <Select data={categories} placeholder="All Jewellery" />
 
-                <div className="search">
-                  <input type="text" placeholder="Search for items..." />
-                  <SearchIcon className="searchIcon cursor" />
+                  <div className="search">
+                    <input type="text" placeholder="Search for items..." />
+                    <SearchIcon className="searchIcon cursor" />
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* HEADER SEARCH END */}
+              {/* HEADER SEARCH END */}
 
-            <div className="col-sm-5 d-flex align-items-center search-section">
-              <div className="ml-auto d-flex align-items-center">
-                {/* HEADER LOCATION SELECT START */}
-                <div className="selectCountry">
-                  <Select data={countryList} placeholder="Select Location" />
+              <div className="col-sm-5 d-flex align-items-center search-section">
+                <div className="ml-auto d-flex align-items-center">
+                  {/* HEADER LOCATION SELECT START */}
+                  <div className="selectCountry">
+                    <Select data={countryList} placeholder="Select Location" />
+                  </div>
+                  {/* HEADER LOCATION SELECT END */}
+                  {/* HEADER ICONS  START */}
+                  <ClickAwayListener
+                    onClickAway={() => setIsOpenDropdown(false)}
+                  >
+                    <ul className="list list-inline mb-0 headerTabs">
+                      <li className="list-inline-item">
+                        <span>
+                          <img
+                            src={IconCompare}
+                            className="headerIcon"
+                            alt="compareIcon"
+                          />
+                          <span className="badge bg-success rounded-circle">
+                            13
+                          </span>
+                          Compare
+                        </span>
+                      </li>
+                      <li className="list-inline-item">
+                        <span>
+                          <img
+                            src={IconWishlist}
+                            className="headerIcon"
+                            alt="wishlist icon"
+                          />
+                          <span className="badge bg-success rounded-circle">
+                            3
+                          </span>
+                          Wishlist
+                        </span>
+                      </li>
+                      <li className="list-inline-item">
+                        <span>
+                          <img
+                            src={IconCart}
+                            className="headerIcon"
+                            alt="cart icon"
+                          />
+                          <span className="badge bg-success rounded-circle">
+                            3
+                          </span>
+                          Cart
+                        </span>
+                      </li>
+                      <li className="list-inline-item">
+                        <span
+                          onClick={() => setIsOpenDropdown(!isOpenDropdown)}
+                        >
+                          <img
+                            src={IconUser}
+                            className="headerIcon"
+                            alt="user icon"
+                          />
+                          User
+                        </span>
+                        {isOpenDropdown ? (
+                          <ul className="dropdownMenu">
+                            <li>
+                              <Button className="align-items-center">
+                                <AccountCircleOutlinedIcon />
+                                <span>My Account</span>
+                              </Button>
+                            </li>
+                            <li>
+                              <Button>
+                                <LocationOnOutlinedIcon />
+                                <span>Order Tracking</span>
+                              </Button>
+                            </li>
+
+                            <li>
+                              <Button>
+                                <FavoriteBorderIcon />
+                                <span>My Wishlist</span>
+                              </Button>
+                            </li>
+                            <li>
+                              <Button>
+                                <SettingsOutlinedIcon />
+                                <span>Settings</span>
+                              </Button>
+                            </li>
+                            <li>
+                              <Button>
+                                <ExitToAppOutlinedIcon />
+                                <span>Signout</span>
+                              </Button>
+                            </li>
+                          </ul>
+                        ) : null}
+                      </li>
+                    </ul>
+                  </ClickAwayListener>
+                  {/* HEADER ICONS  END */}
                 </div>
-                {/* HEADER LOCATION SELECT END */}
-                {/* HEADER ICONS  START */}
-                <ClickAwayListener onClickAway={() => setIsOpenDropdown(false)}>
-                  <ul className="list list-inline mb-0 headerTabs">
-                    <li className="list-inline-item">
-                      <span>
-                        <img
-                          src={IconCompare}
-                          className="headerIcon"
-                          alt="compareIcon"
-                        />
-                        <span className="badge bg-success rounded-circle">
-                          13
-                        </span>
-                        Compare
-                      </span>
-                    </li>
-                    <li className="list-inline-item">
-                      <span>
-                        <img
-                          src={IconWishlist}
-                          className="headerIcon"
-                          alt="wishlist icon"
-                        />
-                        <span className="badge bg-success rounded-circle">
-                          3
-                        </span>
-                        Wishlist
-                      </span>
-                    </li>
-                    <li className="list-inline-item">
-                      <span>
-                        <img
-                          src={IconCart}
-                          className="headerIcon"
-                          alt="cart icon"
-                        />
-                        <span className="badge bg-success rounded-circle">
-                          3
-                        </span>
-                        Cart
-                      </span>
-                    </li>
-                    <li className="list-inline-item">
-                      <span onClick={() => setIsOpenDropdown(!isOpenDropdown)}>
-                        <img
-                          src={IconUser}
-                          className="headerIcon"
-                          alt="user icon"
-                        />
-                        User
-                      </span>
-                      {isOpenDropdown ? (
-                        <ul className="dropdownMenu">
-                          <li>
-                            <Button className="align-items-center">
-                              <AccountCircleOutlinedIcon />
-                              <span>My Account</span>
-                            </Button>
-                          </li>
-                          <li>
-                            <Button>
-                              <LocationOnOutlinedIcon />
-                              <span>Order Tracking</span>
-                            </Button>
-                          </li>
-
-                          <li>
-                            <Button>
-                              <FavoriteBorderIcon />
-                              <span>My Wishlist</span>
-                            </Button>
-                          </li>
-                          <li>
-                            <Button>
-                              <SettingsOutlinedIcon />
-                              <span>Settings</span>
-                            </Button>
-                          </li>
-                          <li>
-                            <Button>
-                              <ExitToAppOutlinedIcon />
-                              <span>Signout</span>
-                            </Button>
-                          </li>
-                        </ul>
-                      ) : null}
-                    </li>
-                  </ul>
-                </ClickAwayListener>
-                {/* HEADER ICONS  END */}
               </div>
             </div>
           </div>
-        </div>
+        </header>
         <Nav />
-      </header>
+      </div>
     </>
   );
 };

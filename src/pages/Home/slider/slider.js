@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import "./slider.css";
-import Slider1 from "../../../assets/images/banner/b1.jpg";
-import Slider2 from "../../../assets/images/banner/b0.jpg";
+import Slider1 from "../../../assets/images/banner/sl-2.jpg";
+import Slider2 from "../../../assets/images/banner/sl-0.jpg";
 import Slider3 from "../../../assets/images/banner/sl-1.jpg";
 import Button from "@mui/material/Button";
 

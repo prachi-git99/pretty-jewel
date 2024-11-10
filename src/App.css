@@ -24,7 +24,12 @@ body {
 }
 .title {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "Quicksand", cursive;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
 }

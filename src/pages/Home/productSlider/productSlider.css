@@ -1,0 +1,12 @@
+.productRow .productSlider .item {
+  padding: 10px 8px !important;
+}
+.productRow .banner3 {
+  height: 450px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.productRow .banner3:hover {
+  cursor: pointer;
+}

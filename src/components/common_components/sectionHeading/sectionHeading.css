@@ -1,0 +1,17 @@
+.sectionHeading .filterTab li {
+  margin-left: 20px;
+}
+.sectionHeading .filterTab li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-family: "Quicksand", cursive;
+
+  font-weight: 600;
+}
+.sectionHeading .filterTab li:hover a {
+  color: #ca8a04 !important;
+  top: -3px;
+}

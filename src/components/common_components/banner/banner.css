@@ -1,0 +1,37 @@
+.bannerSection {
+  padding: 25px 0px;
+}
+
+.bannerSection .box {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.bannerSection .box img {
+  height: 250px;
+}
+.bannerSection .box:hover img {
+  transform: scale(1.1);
+}
+
+.bannerSection .box .bnnr-info {
+  position: absolute;
+  top: 35%;
+  left: 20px;
+}
+
+.bannerSection .box .bnnr-info h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 2px 2px rgba(58, 46, 24, 0.5);
+}
+
+.bannerSection .box .bnnr-info button {
+  padding: 7px 15px !important;
+  border-radius: 30px !important;
+
+  color: #fff;
+}

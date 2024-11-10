@@ -1,0 +1,115 @@
+.productThumb {
+  height: auto;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.productThumb:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.productThumb .imgWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.productThumb .imgWrapper .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.7);
+}
+.productThumb:hover .imgWrapper .overlay {
+  opacity: 1;
+  transform: scale(1);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.productThumb .imgWrapper .overlay ul {
+  background: #fff;
+  width: auto;
+  border-radius: 5px;
+  height: auto;
+  border: 1px solid #ca8a04;
+}
+
+.productThumb .imgWrapper .overlay ul li {
+  margin-right: 0px !important;
+  padding: 5px 10px;
+  border-right: 1px solid #ca8a04;
+}
+.productThumb .imgWrapper .overlay ul li a {
+  display: block;
+}
+.productThumb .imgWrapper .overlay ul li svg {
+  color: #ca8a04 !important;
+}
+.productThumb .imgWrapper .overlay ul li svg:hover {
+  color: #000 !important;
+}
+
+.productThumb .imgWrapper img {
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.productThumb:hover .imgWrapper img {
+  border-radius: 8px;
+  transform: scale(1.1);
+}
+
+.productThumb .info .category {
+  font-size: 12px;
+  font-family: "Quicksand", cursive;
+  color: #000;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+.productThumb .info .productTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 5px 0px;
+}
+.productThumb .info .productTitle a {
+  text-decoration: none;
+  color: #000;
+}
+
+.productThumb .price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.productThumb .oldPrice {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+
+.productThumb .info button {
+  font-size: 15px !important;
+  color: #ca8a04 !important;
+  padding: 3px 13px;
+  background: #f3d9a2 !important;
+  text-transform: capitalize;
+}
+.productThumb .info button .btnIcon {
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.productThumb .info button:hover {
+  background: #ca8a04 !important;
+  color: #fff !important;
+}
