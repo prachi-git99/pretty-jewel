@@ -22,7 +22,8 @@
   justify-content: center;
   flex-direction: column;
 }
-.cat_slider_main .cat_item:hover .cat_info img {
+.cat_slider_main .cat_item:hover .cat_info img,
+.cat_slider_main .slick-current .cat_info img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 50%;
 }

@@ -1,0 +1,26 @@
+.newsLetter {
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-family: "Quicksand", cursive;
+}
+.newsLetter img {
+  height: 400px;
+  object-fit: cover;
+  padding: 15px 0px;
+}
+.newsLetter .info {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.newsLetter .info h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.newsLetter .info p {
+  color: #000;
+  opacity: 0.8;
+  font-size: 22px;
+  font-weight: 600;
+}

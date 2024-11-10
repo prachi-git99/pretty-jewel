@@ -7,10 +7,12 @@ const CategorySlider = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 10,
+    slidesToShow: 9,
     slidesToScroll: 1,
     fade: false,
     arrows: true,
+    autoplay: 2000,
+    centerMode: true,
   };
   return (
     <>

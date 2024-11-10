@@ -14,6 +14,8 @@ const ProductSlider = ({ title, list }) => {
     slidesToScroll: 1,
     fade: false,
     arrows: true,
+    autoplay: 1000,
+    centerMode: true,
   };
   return (
     <section className="homeProducts productRow pt-0">
