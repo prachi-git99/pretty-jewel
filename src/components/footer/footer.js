@@ -11,6 +11,9 @@ import SliderTextField from "../common_components/sliderTextField/sliderTextFiel
 import PlaystoreImg from "../../assets/images/playstore.png";
 import PaymentImg1 from "../../assets/images/payment upi.png";
 import PaymentImg2 from "../../assets/images/payment card.png";
+import GithubImg from "../../assets/images/github.png";
+
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
@@ -157,6 +160,26 @@ const Footer = () => {
                 <img src={PaymentImg2} alt="playstore download img" />
               </div>
             </div>
+          </div>
+
+          <br />
+          <hr />
+
+          <p className="credit">
+            © 2024, Designed and developed by
+            <Link to="https://www.linkedin.com/in/prachive"> Prachi Verma</Link>
+          </p>
+          <div className="socialIcon">
+            <Link to="https://www.linkedin.com/in/prachiv">
+              <LinkedInIcon />
+            </Link>
+            <Link to="https://github.com/prachi-git99">
+              <img
+                src={GithubImg}
+                alt="prachi verma github"
+                style={{ height: "2em", width: "2em" }}
+              />
+            </Link>
           </div>
         </div>
       </footer>

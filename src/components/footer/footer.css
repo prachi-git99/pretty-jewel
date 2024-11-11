@@ -52,3 +52,7 @@ footer .part2 ul li a:hover {
 footer .part3 img {
   cursor: pointer;
 }
+footer .credit a {
+  text-decoration: none;
+  color: #ca8a04;
+}
