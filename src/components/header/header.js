@@ -85,7 +85,7 @@ const Header = () => {
               </div>
               {/* HEADER SEARCH END */}
 
-              <div className="col-sm-5 d-flex align-items-center search-section">
+              <div className="col-sm-5 d-flex justify-content-end align-items-center search-section">
                 <div className="ml-auto d-flex align-items-center">
                   {/* HEADER LOCATION SELECT START */}
                   <div className="selectCountry">
@@ -97,7 +97,7 @@ const Header = () => {
                     onClickAway={() => setIsOpenDropdown(false)}
                   >
                     <ul className="list list-inline mb-0 headerTabs">
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <span>
                           <img
                             src={IconCompare}
@@ -109,7 +109,7 @@ const Header = () => {
                           </span>
                           Compare
                         </span>
-                      </li>
+                      </li> */}
                       <li className="list-inline-item">
                         <span>
                           <img

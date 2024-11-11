@@ -2,12 +2,14 @@
   width: 100%;
   height: auto;
   position: relative;
+  margin-top: 60px;
   font-family: "Quicksand", cursive;
 }
 .newsLetter img {
   height: 400px;
   object-fit: cover;
   padding: 15px 0px;
+  border-radius: 30px;
 }
 .newsLetter .info {
   position: absolute;

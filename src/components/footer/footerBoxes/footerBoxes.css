@@ -1,0 +1,31 @@
+.footerWrapper .footerBoxes .box {
+  background: #f0f1f7;
+  padding: 25px;
+  border-radius: 10px;
+}
+.footerWrapper .footerBoxes .box img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.footerWrapper .footerBoxes .box:hover img {
+  transform: translateY(-5px);
+}
+.footerWrapper .footerBoxes .box .info {
+  padding-left: 25px;
+}
+
+.footerWrapper .footerBoxes .box .info p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Quicksand", cursive;
+  opacity: 0.7;
+}
+.footerWrapper .footerBoxes .box .info h5 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Quicksand", cursive;
+}

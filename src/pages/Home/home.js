@@ -5,6 +5,7 @@ import Banner from "./banner/banner";
 import HomeProducts from "./homeProducts/homeProducts";
 import ProductSlider from "./productSlider/productSlider";
 import Newsletter from "./newsletter/newsletter";
+import Footer from "../../components/footer/footer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         list={["Featured", "Popular", "Newly added"]}
       />
       <Newsletter />
+      <Footer />
     </>
   );
 };
